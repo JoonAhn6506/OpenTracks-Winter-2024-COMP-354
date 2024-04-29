@@ -27,88 +27,314 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/favResortTab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="15px"
+            android:paddingLeft="15sp"
+            android:textSize="20sp"
             android:text="Favorite Resort"
-            android:theme="@style/OpenTracksTheme" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Resort Name"
-            android:textSize="36sp"
             android:textStyle="bold"
             android:theme="@style/OpenTracksTheme" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/favResort1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="137"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:text="Resort 1"
+            android:textSize="15sp"
+            android:theme="@style/OpenTracksTheme" />
+
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/favResort2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Runs"
+            android:text="Resort 2"
+            android:textSize="15sp"
             android:theme="@style/OpenTracksTheme" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/favResort3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="15px"
+            android:gravity="center"
+            android:text="Resort 3"
+            android:textSize="15sp"
+            android:theme="@style/OpenTracksTheme" />
+
+        <TextView
+            android:id="@+id/favLiftTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="Favorite Lifts"
             android:theme="@style/OpenTracksTheme" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/favLift1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="1. t-bar"
-            android:textSize="25sp" />
+            android:text="Lift 1"
+            android:textSize="15sp"
+            android:theme="@style/OpenTracksTheme" />
+        <TextView
+            android:id="@+id/favLift2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lift 2"
+            android:textSize="15sp"
+            android:theme="@style/OpenTracksTheme" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/seasonTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="15sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Season Total"
+            android:theme="@style/OpenTracksTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:text="2. magic carpet"
-            android:textSize="25sp" />
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/seasonTotalDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="days"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalDaysValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalVertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="vertical m"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalVerticalValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/seasonTotalRuns"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="runs"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+            <TextView
+                android:id="@+id/seasonTotalRunsValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalDistance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="distance km"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalDistanceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/seasonTotalResort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="resort"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+            <TextView
+                android:id="@+id/seasonTotalResortValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalActive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="active"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonTotalActiveValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/seasonBests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="3. summit chair"
-            android:textSize="25sp" />
+            android:paddingLeft="15sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Season Bests"
+            android:theme="@style/OpenTracksTheme" />
 
-        <TextView
-            android:id="@+id/textView23"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:text="4. pine chair"
-            android:textSize="25sp" />
+            android:padding="8dp">
 
-        <TextView
-            android:id="@+id/textView24"
+            <TextView
+                android:id="@+id/seasonBestsSpeed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="max km/h"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+            <TextView
+                android:id="@+id/seasonBestsSpeedValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonBestsTallest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="active"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonBestsTallestValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:text="5. Maple chair"
-            android:textSize="25sp" />
+            android:padding="8dp">
 
+            <TextView
+                android:id="@+id/seasonBestsAltitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="max alititude m"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+            <TextView
+                android:id="@+id/seasonBestsAltitudeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonBestsLongestRun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="longest run km"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+
+            <TextView
+                android:id="@+id/seasonBestsLongestRunValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:theme="@style/OpenTracksTheme" />
+        </LinearLayout>
         <TextView
             android:id="@+id/seasonPerSeasonEmptyText"
             android:layout_width="match_parent"
